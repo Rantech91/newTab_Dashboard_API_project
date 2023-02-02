@@ -81,3 +81,8 @@ div#valor-dolar {
     font-size: large;
     font-weight: 400;
 }
+
+#bnb-url {
+    text-decoration: none;
+    color: white;
+}

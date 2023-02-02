@@ -23,7 +23,7 @@ fetch("https://api.coingecko.com/api/v3/coins/binancecoin")
   .then((data) => {
     document.getElementById("crypto-top").innerHTML = `
             <img src=${data.image.small} />
-            <span>${data.name}</span>
+            <span><a href="https://coinmarketcap.com/currencies/bnb/" id="bnb-url">${data.name}</a></span>
         `;
     document.getElementById("crypto").innerHTML += `
             <p>🎯: $${data.market_data.current_price.usd}</p>
